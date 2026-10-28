@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpSanca - Soluções Urbanas</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="/js/script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="/img/EG3.png" alt="HelpSanca Logo">
+
+            <div class="logo-text">
+                <span class="brand-title">HelpSanca</span>
+                <span class="brand-subtitle">EG3 SOLUTIONS</span>
+            </div>
+        </div>
+
+        <nav class="nav-menu">
+            <!--Icons - Font Awesome Lib (fa-something something)-->
+            <a href="#about"><i class="fa-solid fa-circle-exclamation"></i> Problema</a>
+            <a href="#pains"><i class="fa-solid fa-heart-crack"></i> Dores</a>
+            <a href="#solution"><i class="fa-solid fa-lightbulb"></i> Solução</a>
+            <a href="#how-it-works"><i class="fa-solid fa-gears"></i> Funcionamento</a>
+            <a href="#severity"><i class="fa-solid fa-triangle-exclamation"></i> Agravamento</a>
+            <a href="#objectives"><i class="fa-solid fa-bullseye"></i> Objetivos</a>
+            <a href="#lang"><i class="fa-solid fa-code"></i> Tecnologias</a>
+            <a href="#team"><i class="fa-solid fa-users"></i> Equipe</a>
+        </nav>
+
+        <button class="btn-primary" onclick="voltarProjectPage()">
+            <i class="fa-solid fa-rocket"></i> Voltar aos Projetos
+        </button>
+
+    </header>
+
+    <section class="starting">
+
+        <div class="starting-content">
+            <h1>Gestão de Ocorrências Urbanas</h1>
+            <p>Revolucionando a comunicação entre moradores e a prefeitura em São Carlos e região</p>
+            <a href="#about" class="btn-starting">
+                <i class="fa-solid fa-circle-play"></i> Saiba Mais
+            </a>
+        </div>
+    </section>
+
+    <main>
+        <section id="about" class="section-container">
+            <h2 class="section-title">O Problema</h2>
+            <p class="section-subtitle">Desafios diários que impactam a qualidade de vida na cidade</p>
+
+            <div class="card card-alert">
+                <div class="card-icon alert-icon">
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                </div>
+                <div class="card-body">
+                    <h3>Desafios Diários nas Ruas da Cidade</h3>
+                    <p>
+                        Imagine andar pela cidade e se deparar com buracos na via, vazamentos de esgoto ou entulho
+                        acumulado nas calçadas. Isso acontece com frequência, e os moradores perdem tempo sem saber
+                        exatamente a quem ou como recorrer de forma rápida e eficiente.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção: Dores do Cliente -->
+        <section id="pains" class="section-container">
+            <h2 class="section-title">Dores do Cliente</h2>
+            <p class="section-subtitle">Principais obstáculos enfrentados pelos cidadãos diariamente</p>
+
+            <div class="grid-3-cols">
+                <div class="card card-top-border-red">
+                    <div class="card-center-icon"><i class="fa-solid fa-road-barrier"></i></div>
+                    <h3>Falta de Infraestrutura</h3>
+                    <p>Perigos recorrentes gerados pela falta ou má conservação da infraestrutura da cidade.</p>
+                </div>
+
+                <div class="card card-top-border-red">
+                    <div class="card-center-icon"><i class="fa-solid fa-comment-slash"></i></div>
+                    <h3>Incomunicabilidade</h3>
+                    <p>Impossibilidade de reportar os problemas diretamente aos órgãos públicos e outros moradores.</p>
+                </div>
+
+                <div class="card card-top-border-red">
+                    <div class="card-center-icon"><i class="fa-solid fa-map-location"></i></div>
+                    <h3>Dificuldade de Localização</h3>
+                    <p>Falta de instrução de localização precisa para informar acidentes ou problemas na via.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="solution" class="section-container">
+            <h2 class="section-title">Nossa Solução</h2>
+            <p class="section-subtitle">HelpSanca - A plataforma inteligente de mapeamento urbano</p>
+
+            <div class="card card-success">
+                <div class="card-icon success-icon">
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
+                <div class="card-body">
+                    <h3>HelpSanca - Mapeamento e Encaminhamento Direto</h3>
+                    <p>
+                        O HelpSanca é um portal intuitivo onde qualquer cidadão pode indicar e categorizar problemas da
+                        sua rua. A ocorrência é registrada em segundos e enviada automaticamente aos órgãos responsáveis
+                        para agilizar a resolução.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção: Funcionamento do Aplicativo -->
+        <section id="how-it-works" class="section-container">
+            <h2 class="section-title">Funcionamento do Aplicativo</h2>
+            <p class="section-subtitle">Passo a passo da experiência do usuário do login ao reporte de ocorrências</p>
+
+            <div class="grid-4-cols">
+                <div class="card card-flat">
+                    <div class="card-center-icon"><i class="fa-solid fa-right-to-bracket"></i></div>
+                    <h3>1. Autenticação</h3>
+                    <p>Página inicial com login (e-mail/usuário e senha), cadastro simplificado (nome, e-mail, usuário e senha) e opção de redefinição de senha.</p>
+                </div>
+
+                <div class="card card-flat">
+                    <div class="card-center-icon"><i class="fa-solid fa-map-marked-alt"></i></div>
+                    <h3>2. Mapa Interativo</h3>
+                    <p>Após acessar, o usuário visualiza um mapa dinâmico contendo todos os avisos reportados pelos moradores da região.</p>
+                </div>
+
+                <div class="card card-flat">
+                    <div class="card-center-icon"><i class="fa-solid fa-circle-plus"></i></div>
+                    <h3>3. Criar Ocorrência</h3>
+                    <p>Pressione o botão "+" no rodapé para abrir o formulário. Informe o tipo de situação, breve descrição, localização e horário.</p>
+                </div>
+
+                <div class="card card-flat">
+                    <div class="card-center-icon"><i class="fa-solid fa-paper-plane"></i></div>
+                    <h3>4. Envio & Ajustes</h3>
+                    <p>O reporte é encaminhado automaticamente ao órgão especializado. O app inclui abas para configurações de perfil, localização e notificações.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção: Tipos de Agravamento -->
+        <section id="severity" class="section-container bg-light-box">
+            <h2 class="section-title">Tipos de Agravamento</h2>
+            <p class="section-subtitle">Classificação das ocorrências para priorização dos atendimentos</p>
+
+            <div class="grid-4-cols">
+                <div class="card text-center" style="border-top: 4px solid #28a745;">
+                    <div class="card-center-icon" style="color: #28a745;"><i class="fa-solid fa-circle"></i></div>
+                    <h3>Verde</h3>
+                    <p>Situação leve</p>
+                </div>
+
+                <div class="card text-center" style="border-top: 4px solid #ffc107;">
+                    <div class="card-center-icon" style="color: #ffc107;"><i class="fa-solid fa-circle"></i></div>
+                    <h3>Amarelo</h3>
+                    <p>Situação moderada</p>
+                </div>
+
+                <div class="card text-center" style="border-top: 4px solid #dc3545;">
+                    <div class="card-center-icon" style="color: #dc3545;"><i class="fa-solid fa-circle"></i></div>
+                    <h3>Vermelho</h3>
+                    <p>Situação grave</p>
+                </div>
+
+                <div class="card text-center" style="border-top: 4px solid #6c757d;">
+                    <div class="card-center-icon" style="color: #6c757d;"><i class="fa-regular fa-circle"></i></div>
+                    <h3>Branco</h3>
+                    <p>Outros tipos de situação</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-container">
+            <h2 class="section-title">Problemas Resolvidos</h2>
+            <p class="section-subtitle">Comparação entre o modelo tradicional e o uso do HelpSanca</p>
+
+            <div class="grid-2-cols">
+                <div class="card card-top-border-red">
+                    <h3>Antes do HelpSanca</h3>
+                    <p>Processos burocráticos, demora no atendimento e falta de visibilidade das ocorrências na cidade.
+                    </p>
+                    <ul class="check-list list-negative">
+                        <li><i class="fa-solid fa-circle-xmark"></i> Demora na abertura de chamados</li>
+                        <li><i class="fa-solid fa-circle-xmark"></i> Falta de acompanhamento da solicitação</li>
+                        <li><i class="fa-solid fa-circle-xmark"></i> Processos manuais e descentralizados</li>
+                        <li><i class="fa-solid fa-circle-xmark"></i> Frustração da população</li>
+                    </ul>
+                </div>
+
+                <div class="card card-top-border-green">
+                    <h3>Depois do HelpSanca</h3>
+                    <p>Comunicação direta, transparência no status do problema e cidade mais bem cuidada.</p>
+                    <ul class="check-list list-positive">
+                        <li><i class="fa-solid fa-circle-check"></i> Registro rápido em menos de 1 minuto</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Informação geolocalizada precisa</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Encaminhamento direto aos órgãos</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Transparência para a comunidade</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="objectives" class="section-container">
+            <h2 class="section-title">Nossos Objetivos</h2>
+            <p class="section-subtitle">Metas claras para transformar a zeladoria urbana</p>
+
+            <div class="grid-3-cols">
+                <div class="card card-top-accent">
+                    <div class="card-center-icon"><i class="fa-solid fa-bullseye"></i></div>
+                    <h3>Redução nos Prazos</h3>
+                    <p>Reduzir significativamente o tempo de resposta entre a identificação do problema e o envio à
+                        prefeitura.</p>
+                </div>
+
+                <div class="card card-top-accent">
+                    <div class="card-center-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <h3>Cidadania Ativa</h3>
+                    <p>Engajar a comunidade para atuar ativamente na preservação e melhoria dos bairros.</p>
+                </div>
+
+                <div class="card card-top-accent">
+                    <div class="card-center-icon"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></div>
+                    <h3>Escalabilidade</h3>
+                    <p>Expandir a solução para outros municípios da região e integrá-la a novos serviços de utilidade
+                        pública.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="lang" class="section-container bg-light-box">
+            <h2 class="section-title">Tecnologia e Interface</h2>
+            <p class="section-subtitle">Tecnologias modernas para uma experiência fluida e eficiente</p>
+
+            <div class="grid-4-cols">
+                <div class="card card-flat">
+                    <div class="card-center-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                    <h3>HTML5 & CSS3</h3>
+                    <p>Interface responsiva adaptada para celulares, tablets e computadores.</p>
+                </div>
+
+                <div class="card card-flat">
+                    <div class="card-center-icon"><i class="fa-brands fa-js"></i></div>
+                    <h3>JavaScript</h3>
+                    <p>Dinamismo e interatividade fluida na navegação do usuário.</p>
+                </div>
+
+                <div class="card card-flat">
+                    <div class="card-center-icon"><i class="fa-solid fa-database"></i></div>
+                    <h3>MySQL & Java</h3>
+                    <p>Estrutura sólida para armazenamento e gerenciamento seguro de dados.</p>
+                </div>
+
+                <div class="card card-flat">
+                    <div class="card-center-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+                    <h3>Leaflet & OSM</h3>
+                    <p>APIs de mapas para geolocalização e visualização precisa das demandas.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="team" class="section-container">
+            <h2 class="section-title">Sobre a Equipe</h2>
+            <p class="section-subtitle">Desenvolvido pela EG3 Solutions</p>
+
+            <div class="grid-4-cols">
+
+                <!-- Perfil 1 -->
+                <div class="card card-flat text-center profile-card">
+                    <div class="profile">
+                        <div class="profile-img-container">
+                            <img src="/img/giu.jpg" alt="Foto do Líder">
+                        </div>
+                        <div class="profile-info">
+                            <h3>Giuliano D. Pau</h3>
+                            <p>Desenvolvedor Full-Stack</p>
+                            <a href="https://www.linkedin.com/in/giuliano-danelli-pau-73a386292" target="_blank">Linkedin</a>
+                            <a href="https://github.com/giulianodanellipau" target="_blank">Github</a>
+                            <a href="https://instagram.com/@giuliano.danelli" target="_blank">Instagram</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Perfil 2 -->
+                <div class="card card-flat text-center profile-card">
+                    <div class="profile">
+                        <div class="profile-img-container">
+                            <img src="/img/arantes.png" alt="Foto do Back">
+                        </div>
+                        <div class="profile-info">
+                            <h3>Gustavo O. Arantes</h3>
+                            <p>Desenvolvedor Back-End</p>
+                            <a href="" target="_blank">Linkedin</a>
+                            <a href="https://github.com/gustavooarantes-rgb" target="_blank">Github</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Perfil 3 -->
+                <div class="card card-flat text-center profile-card">
+                    <div class="profile">
+                        <div class="profile-img-container">
+                            <img src="/img/ester.png" alt="Foto do Front1">
+                        </div>
+                        <div class="profile-info">
+                            <h3>Ester L. Antoniazzi</h3>
+                            <p>Desenvolvedora Front-End e Designer UI/UX</p>
+                            <a href="" target="_blank">Linkedin</a>
+                            <a href="https://github.com/sterzzi9" target="_blank">Github</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Perfil 4 -->
+                <div class="card card-flat text-center profile-card">
+                    <div class="profile">
+                        <div class="profile-img-container">
+                            <img src="/img/gabi.png" alt="Foto do integrante">
+                        </div>
+                        <div class="profile-info">
+                            <h3>Gabrielle L. Callé</h3>
+                            <p>Desenvolvedora Front-End e Designer UI/UX</p>
+                            <a href="" target="_blank">Linkedin</a>
+                            <a href="https://github.com/gabirielle" target="_blank">Github</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2026-2027 EG3 Solutions. Todos os direitos reservados.</p>
+            <nav class="footer-nav">
+                <a href="#about">Problema</a>
+                <a href="#pains">Dores</a>
+                <a href="#solution">Solução</a>
+                <a href="#how-it-works">Funcionamento</a>
+                <a href="#severity">Agravamento</a>
+                <a href="#objectives">Objetivos</a>
+                <a href="#lang">Tecnologia</a>
+                <a href="#team">Equipe</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+
+</html>
